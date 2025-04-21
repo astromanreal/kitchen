@@ -26,30 +26,31 @@ export async function getStudentReviews(): Promise<StudentReview[]> {
 
   return [
     {
-      studentName: 'Alice Smith',
-      reviewText: 'Great food and convenient location! The staff is always friendly and helpful.',
+      studentName: 'Aarav Sharma',
+      reviewText: 'Campus Cuisine is a lifesaver! Delicious and healthy meals that fit my busy schedule. Highly recommended!',
       rating: 5,
     },
     {
-      studentName: 'Bob Johnson',
-      reviewText: 'The menu is diverse and the prices are reasonable. I especially love the vegetarian options.',
+      studentName: 'Priya Patel',
+      reviewText: 'I love the variety of vegetarian options. The food is always fresh and flavorful.',
       rating: 4,
     },
     {
-      studentName: 'Charlie Brown',
-      reviewText: 'I appreciate the healthy choices available. It\'s great to have nutritious meals on campus.',
+      studentName: 'Aryan Verma',
+      reviewText: 'Affordable and tasty! It\'s great to have a place on campus that cares about student nutrition.',
       rating: 5,
     },
     {
-      studentName: 'Diana Lee',
-      reviewText: 'The food is consistently good, and the service is quick. Perfect for a busy student!',
+      studentName: 'Diya Singh',
+      reviewText: 'The quick service is perfect for my hectic days. The food is consistently good and satisfying.',
       rating: 4,
     },
     {
-      studentName: 'Ethan White',
-      reviewText: 'I\'m impressed with the quality and taste of the meals. Definitely worth the price!',
+      studentName: ' Rohan Gupta',
+      reviewText: 'Impressed with the quality and taste. The meals are worth every rupee!',
       rating: 5,
     },
   ];
 }
+
 

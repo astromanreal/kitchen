@@ -3,15 +3,15 @@
 import {Menu} from '@/components/Menu';
 import {StudentReviews} from '@/components/StudentReviews';
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from '@/components/ui/card';
-import {weeklyMealPlan} from './meal-plan/page';
+import mealData from '@/data/meal-data.json';
 import {cn} from "@/lib/utils";
 
 const dayOfWeek = new Date().toLocaleDateString('en-US', {weekday: 'long'});
-const todaysMealPlan = weeklyMealPlan.find(dayPlan => dayPlan.day === dayOfWeek);
+const todaysMealPlan = mealData.find(dayPlan => dayPlan.day === dayOfWeek);
 
 export default function Home() {
   return (
-    <div className="container mx-auto py-10">
+    <div className="container mx-auto py-10 px-4 sm:px-6 lg:px-8">
       {/* Hero Section */}
       <section className="text-center py-6 mb-8">
         <h1 className="text-3xl font-semibold text-gray-800">
@@ -31,12 +31,15 @@ export default function Home() {
             </CardHeader>
             <CardContent>
               {todaysMealPlan.meals.map((meal, mealIndex) => (
-                <div key={mealIndex} className="mb-4 p-4 border rounded-md">
+                <div key={mealIndex} className="mb-4 p-4 rounded-md" style={{ backgroundColor: meal.dietaryLabels.includes('vegan') ? '#a5d6a7' : meal.dietaryLabels.includes('vegetarian') ? '#e6ee9c' : '#ffcc80' }}>
                   <h3 className="text-xl font-semibold">{meal.time}</h3>
                   <p className="text-lg">{meal.food}</p>
                   <CardDescription>
                     Calories: {meal.details.calories}, Protein: {meal.details.protein}g, Carbs: {meal.details.carbs}g
                   </CardDescription>
+                  <p className="text-sm">
+                    Dietary Labels: {meal.dietaryLabels.join(", ")}
+                  </p>
                 </div>
               ))}
             </CardContent>
@@ -51,7 +54,7 @@ export default function Home() {
             <CardDescription>Explore our delicious and nutritious meal options for today.</CardDescription>
           </CardHeader>
           <CardContent>
-            <Menu weeklyMealPlan={weeklyMealPlan}/>
+            <Menu />
           </CardContent>
         </Card>
       </section>

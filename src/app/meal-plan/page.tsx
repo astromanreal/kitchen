@@ -1,134 +1,28 @@
 "use client";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-
-export const weeklyMealPlan = [
-  {
-    day: "Monday",
-    meals: [
-      {
-        time: "Day",
-        food: "Chicken Salad Sandwich",
-        details: { calories: 450, protein: 25, carbs: 40 },
-        dietaryLabels: ["non-vegetarian"],
-      },
-      {
-        time: "Night",
-        food: "Vegetarian Pasta",
-        details: { calories: 520, protein: 18, carbs: 65 },
-        dietaryLabels: ["vegetarian"],
-      },
-    ],
-  },
-  {
-    day: "Tuesday",
-    meals: [
-      {
-        time: "Day",
-        food: "Turkey and Swiss Wrap",
-        details: { calories: 400, protein: 30, carbs: 35 },
-        dietaryLabels: ["non-vegetarian"],
-      },
-      {
-        time: "Night",
-        food: "Salmon with Roasted Vegetables",
-        details: { calories: 600, protein: 40, carbs: 30 },
-        dietaryLabels: ["non-vegetarian"],
-      },
-    ],
-  },
-  {
-    day: "Wednesday",
-    meals: [
-      {
-        time: "Day",
-        food: "Tuna Salad on Whole Wheat",
-        details: { calories: 380, protein: 28, carbs: 30 },
-        dietaryLabels: ["non-vegetarian"],
-      },
-      {
-        time: "Night",
-        food: "Lentil Soup with Whole Grain Bread",
-        details: { calories: 420, protein: 20, carbs: 50 },
-        dietaryLabels: ["vegan", "vegetarian"],
-      },
-    ],
-  },
-  {
-    day: "Thursday",
-    meals: [
-      {
-        time: "Day",
-        food: "Ham and Cheese Baguette",
-        details: { calories: 460, protein: 26, carbs: 42 },
-        dietaryLabels: ["non-vegetarian"],
-      },
-      {
-        time: "Night",
-        food: "Chicken Stir-Fry with Brown Rice",
-        details: { calories: 550, protein: 35, carbs: 50 },
-        dietaryLabels: ["non-vegetarian"],
-      },
-    ],
-  },
-  {
-    day: "Friday",
-    meals: [
-      {
-        time: "Day",
-        food: "Egg Salad Sandwich",
-        details: { calories: 420, protein: 22, carbs: 38 },
-        dietaryLabels: ["vegetarian"],
-      },
-      {
-        time: "Night",
-        food: "Pizza with Vegetables",
-        details: { calories: 650, protein: 28, carbs: 70 },
-        dietaryLabels: ["vegetarian"],
-      },
-    ],
-  },
-  {
-    day: "Saturday",
-    meals: [
-      {
-        time: "Day",
-        food: "BLT Sandwich",
-        details: { calories: 480, protein: 20, carbs: 45 },
-        dietaryLabels: ["non-vegetarian"],
-      },
-      {
-        time: "Night",
-        food: "Steak with Sweet Potato",
-        details: { calories: 700, protein: 45, carbs: 40 },
-        dietaryLabels: ["non-vegetarian"],
-      },
-    ],
-  },
-  {
-    day: "Sunday",
-    meals: [
-      {
-        time: "Day",
-        food: "Peanut Butter and Banana Sandwich",
-        details: { calories: 430, protein: 15, carbs: 50 },
-        dietaryLabels: ["vegan", "vegetarian"],
-      },
-      {
-        time: "Night",
-        food: "Roast Chicken with Potatoes",
-        details: { calories: 620, protein: 40, carbs: 35 },
-        dietaryLabels: ["non-vegetarian"],
-      },
-    ],
-  },
-];
+import mealData from '@/data/meal-data.json';
 
 export default function MealPlanPage() {
   return (
-    <div className="container mx-auto py-10">
+    <div className="container mx-auto py-10 px-4 sm:px-6 lg:px-8">
+       {/* Hero Section */}
+      <section className="relative py-12 px-6 mb-8 rounded-lg overflow-hidden">
+        <div className="relative z-10 text-center">
+          <h1 className="text-3xl font-bold mb-4 text-foreground">
+            Nourishing Your Academic Journey: Explore Our Meal Plans
+          </h1>
+           <p className="text-lg text-muted-foreground">
+           "A well-planned meal is a cornerstone of academic success, providing sustained energy and focus."
+          </p>
+          <p className="text-lg text-muted-foreground">
+            Discover our weekly meal plans designed to fuel your mind and body.
+          </p>
+        </div>
+      </section>
+
       <h1 className="text-3xl font-bold mb-8 text-center">Weekly Meal Plan</h1>
-      {weeklyMealPlan.map((dayPlan, index) => (
+      {mealData.map((dayPlan, index) => (
         <Card key={index} className="mb-6">
           <CardHeader>
             <CardTitle>{dayPlan.day}</CardTitle>
@@ -152,3 +46,4 @@ export default function MealPlanPage() {
     </div>
   );
 }
+
