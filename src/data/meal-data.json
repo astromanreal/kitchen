@@ -5,14 +5,14 @@
     "meals": [
       {
         "time": "Day",
-        "food": "Chicken Salad Sandwich",
-        "details": { "calories": 450, "protein": 25, "carbs": 40 },
-        "dietaryLabels": ["non-vegetarian"]
+        "food": "Aloo Paratha with Curd and Pickle",
+        "details": { "calories": 500, "protein": 15, "carbs": 70, "fat": 18 },
+        "dietaryLabels": ["vegetarian"]
       },
       {
         "time": "Night",
-        "food": "Vegetarian Pasta",
-        "details": { "calories": 520, "protein": 18, "carbs": 65 },
+        "food": "Dal Makhani, Rice, Roti, Mix Veg Sabzi",
+        "details": { "calories": 650, "protein": 22, "carbs": 90, "fat": 25 },
         "dietaryLabels": ["vegetarian"]
       }
     ]
@@ -22,14 +22,14 @@
     "meals": [
       {
         "time": "Day",
-        "food": "Turkey and Swiss Wrap",
-        "details": { "calories": 400, "protein": 30, "carbs": 35 },
-        "dietaryLabels": ["non-vegetarian"]
+        "food": "Poha with Sev and Tea",
+        "details": { "calories": 400, "protein": 10, "carbs": 60, "fat": 12 },
+        "dietaryLabels": ["vegan", "vegetarian"]
       },
       {
         "time": "Night",
-        "food": "Salmon with Roasted Vegetables",
-        "details": { "calories": 600, "protein": 40, "carbs": 30 },
+        "food": "Chicken Curry, Rice, Roti, Salad",
+        "details": { "calories": 700, "protein": 35, "carbs": 75, "fat": 30 },
         "dietaryLabels": ["non-vegetarian"]
       }
     ]
@@ -39,15 +39,15 @@
     "meals": [
       {
         "time": "Day",
-        "food": "Tuna Salad on Whole Wheat",
-        "details": { "calories": 380, "protein": 28, "carbs": 30 },
-        "dietaryLabels": ["non-vegetarian"]
+        "food": "Idli Sambar with Coconut Chutney",
+        "details": { "calories": 450, "protein": 12, "carbs": 75, "fat": 10 },
+        "dietaryLabels": ["vegan", "vegetarian"]
       },
       {
         "time": "Night",
-        "food": "Lentil Soup with Whole Grain Bread",
-        "details": { "calories": 420, "protein": 20, "carbs": 50 },
-        "dietaryLabels": ["vegan", "vegetarian"]
+        "food": "Paneer Butter Masala, Rice, Roti, Cucumber Raita",
+        "details": { "calories": 720, "protein": 25, "carbs": 85, "fat": 32 },
+        "dietaryLabels": ["vegetarian"]
       }
     ]
   },
@@ -56,14 +56,14 @@
     "meals": [
       {
         "time": "Day",
-        "food": "Ham and Cheese Baguette",
-        "details": { "calories": 460, "protein": 26, "carbs": 42 },
-        "dietaryLabels": ["non-vegetarian"]
+        "food": "Chole Bhature with Lassi",
+        "details": { "calories": 600, "protein": 18, "carbs": 80, "fat": 25 },
+        "dietaryLabels": ["vegetarian"]
       },
       {
         "time": "Night",
-        "food": "Chicken Stir-Fry with Brown Rice",
-        "details": { "calories": 550, "protein": 35, "carbs": 50 },
+        "food": "Egg Curry, Rice, Roti, Green Salad",
+        "details": { "calories": 680, "protein": 30, "carbs": 80, "fat": 28 },
         "dietaryLabels": ["non-vegetarian"]
       }
     ]
@@ -73,14 +73,14 @@
     "meals": [
       {
         "time": "Day",
-        "food": "Egg Salad Sandwich",
-        "details": { "calories": 420, "protein": 22, "carbs": 38 },
-        "dietaryLabels": ["vegetarian"]
+        "food": "Upma with Peanut Chutney",
+        "details": { "calories": 420, "protein": 11, "carbs": 65, "fat": 15 },
+        "dietaryLabels": ["vegan", "vegetarian"]
       },
       {
         "time": "Night",
-        "food": "Pizza with Vegetables",
-        "details": { "calories": 650, "protein": 28, "carbs": 70 },
+        "food": "Veg Biryani with Raita and Papad",
+        "details": { "calories": 650, "protein": 15, "carbs": 100, "fat": 20 },
         "dietaryLabels": ["vegetarian"]
       }
     ]
@@ -90,14 +90,14 @@
     "meals": [
       {
         "time": "Day",
-        "food": "BLT Sandwich",
-        "details": { "calories": 480, "protein": 20, "carbs": 45 },
-        "dietaryLabels": ["non-vegetarian"]
+        "food": "Masala Dosa with Sambar and Chutney",
+        "details": { "calories": 550, "protein": 14, "carbs": 85, "fat": 18 },
+        "dietaryLabels": ["vegan", "vegetarian"]
       },
       {
         "time": "Night",
-        "food": "Steak with Sweet Potato",
-        "details": { "calories": 700, "protein": 45, "carbs": 40 },
+        "food": "Fish Fry, Rice, Dal, Bhindi Sabzi",
+        "details": { "calories": 750, "protein": 40, "carbs": 80, "fat": 35 },
         "dietaryLabels": ["non-vegetarian"]
       }
     ]
@@ -107,18 +107,17 @@
     "meals": [
       {
         "time": "Day",
-        "food": "Peanut Butter and Banana Sandwich",
-        "details": { "calories": 430, "protein": 15, "carbs": 50 },
-        "dietaryLabels": ["vegan", "vegetarian"]
+        "food": "Puri Sabzi (Aloo) with Halwa",
+        "details": { "calories": 620, "protein": 10, "carbs": 95, "fat": 22 },
+        "dietaryLabels": ["vegetarian"]
       },
       {
         "time": "Night",
-        "food": "Roast Chicken with Potatoes",
-        "details": { "calories": 620, "protein": 40, "carbs": 35 },
+        "food": "Special Chicken Biryani with Raita",
+        "details": { "calories": 800, "protein": 38, "carbs": 100, "fat": 30 },
         "dietaryLabels": ["non-vegetarian"]
       }
     ]
   }
 ]
-
     

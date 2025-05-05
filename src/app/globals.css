@@ -42,6 +42,41 @@ body {
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+
+  .dark {
+    --background: 240 10% 3.9%; /* Dark blue-gray */
+    --foreground: 0 0% 98%; /* Almost white */
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 214 71% 62%; /* Slightly lighter green for dark mode */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 240 3.7% 15.9%; /* Darker gray */
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%; /* Lighter gray */
+    --accent: 180 80% 45%; /* Brighter Teal */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 50.6%; /* Darker red */
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 214 71% 52%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 50%;
+     --sidebar-background: 240 10% 3.9%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 0 0% 98%;
+    --sidebar-primary-foreground: 240 5.9% 10%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 214 71% 52%;
+  }
 }
 
 @layer base {
@@ -50,7 +85,7 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+    /* Add transition for smooth color changes */
+    @apply transition-colors duration-300;
   }
 }
-
-
