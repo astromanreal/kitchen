@@ -75,6 +75,9 @@ export default function RootLayout({
   // Add suppressHydrationWarning to html tag
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+      <meta name="google-site-verification" content="mac7aLjz9hgBPOeatEJp8fZ6RL2GRi8PeWQfgcITzFU" />
+      </head>
       {/* Apply font variables and base styling */}
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased transition-colors duration-300 bg-background text-foreground`}>
          {/* Wrap body content with ThemeProvider */}
